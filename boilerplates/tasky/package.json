@@ -2,15 +2,24 @@
   "name": "timer",
   "version": "1.0.0",
   "description": "Electron timer app",
-  "main": "main.js",
+  "main": "index.js",
+  "build": {
+    "appId": "timothy.urista",
+    "mac": {
+      "category": "timer"
+    }
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "start-app": "yarn electron && yarn start",
-    "electron": "electron ."
+    "electron": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Rallycoding",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-builder": "^19.43.4"
   },
   "dependencies": {
     "babel-core": "^6.24.0",
