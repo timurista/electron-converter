@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "start-app": "yarn electron && yarn start",
     "electron": "electron ."
   },
   "author": "Rallycoding",
